@@ -1,0 +1,1157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img { 
+    display: block;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1140px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+.header {
+    position: relative;
+    /* background-color: #FFAB00; */
+    height: 100%;
+    /* clip-path: circle(259% at 50% -630%); */
+    /* -webkit-clip-path: circle(259% at 50% -630%); */
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: url("../images/transition.svg") no-repeat 0 101% / 100%, #FFAB00;
+    height: 493px;
+    z-index: -999;
+}
+
+.header_top {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
+    max-width: 1110px;
+    align-items: center;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.contact_container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 98px;
+}
+
+.phone_container {
+    display: flex;
+    margin-right: 32px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.phone {
+    padding-left: 8px;
+}
+
+.mail_container {
+    display: flex;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.mail {
+    padding-left: 7px;
+}
+
+.header_buttons {
+    display: flex;
+    justify-content: space-between;
+    color: #FFAB00;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 170%;
+}
+
+.sign_up {
+    display: flex;
+    background-color: #FFF; 
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 25px;
+    margin-left: 10px;
+}
+
+.sign_in {
+    display: flex;
+    background-color: #FFF;
+    padding: 8px 25px 8px 29px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign_in-text {
+    margin-left: 13px;
+}
+
+.sign_up-text {
+    margin-left: 10px;
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.header_app_promo {
+    grid-column-start: 2;
+    margin-top: -62px;
+    position: relative;
+}
+
+.header_scroll_button {
+    cursor: pointer;
+    position: absolute;
+    top: 725px;
+    left: 42%;
+}
+
+.header_scrolll_button-arrow {
+    position: absolute;
+    top: 43%;
+    left: 41%;
+}
+
+.header_social_media {
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 28px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 241px;
+}
+
+.social_button {
+    margin-bottom: 21px;
+}
+
+.social_inst {
+    display: block;
+    background-image: url("../icons/inst_icon.png");
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+}
+
+.social_vk {
+    display: block;
+    background-image: url("../icons/vk_icon.png");
+    width: 22px;
+    height: 13px;
+    background-repeat: no-repeat;
+}
+
+.social_fb {
+    display: block;
+    background-image: url("../icons/fb_icon.png");
+    width: 11px;
+    height: 22px;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+.white_ball_1 {
+    position: absolute;
+    top: 18px;
+    left: 11%;
+}
+
+.pink_ball_1 {
+    position: absolute;
+    top: 62px;
+    left: 30%;
+}
+
+.pink_ball_2 {
+    position: absolute;
+    top: 73px;
+    left: 56%;
+    z-index: -2;
+}
+
+.white_ball_2 {
+    position: absolute;
+    top: 185px;
+    left: 17%;
+}
+
+.purple_ball_1 {
+    position: absolute;
+    top: 155px;
+    left: 73%;
+}
+
+.purple_ball_2 {
+    position: absolute;
+    top: 301px;
+    left: 5%;
+}
+
+.pink_ball_3 {
+    position: absolute;
+    top: 338px;
+    left: 84%;
+    z-index: -2;
+}
+
+.pink_ball_4 {
+    position: absolute;
+    top: 454px;
+    left: 6%;
+    z-index: -2;
+}
+
+.red_ball_1 {
+    position: absolute;
+    top: 431px;
+    left: 29%;
+    z-index: -2;
+}
+
+.purple_ball_3 {
+    position: absolute;
+    top: 478px;
+    left: 75%;
+}
+
+.purple_ball_4 {
+    position: absolute;
+    top: 523px;
+    left: 17%;
+}
+
+.purple_ball_5 {
+    position: absolute;
+    top: 548px;
+    left: 58%;
+    z-index: 2;
+}
+
+.pink_ball_5 {
+    position: absolute;
+    top: 596px;
+    left: 81%;
+    z-index: -2;
+}
+
+.red_ball_2 {
+    position: absolute;
+    top: 738px;
+    left: 25%;
+    z-index: -2;
+}
+
+.info_download {
+    margin-top: -42px;
+}
+
+.info_download_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 125px;
+    max-width: 1096px;
+    margin: auto;
+    align-items: center;
+}
+
+.info_download_desc {
+    margin-top: 42px;
+    margin-right: 6px;
+}
+
+.info_download_title {
+    display: flex;
+    font-size: 42px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    line-height: 120%;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.info_download_icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 17px;
+    margin-top: 11px;
+}
+
+.info_download_text {
+    color: #768C9B;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    padding-top: 25px;
+}
+
+.info_download_buttons {
+    display: flex;
+    padding-top: 73px;
+}
+
+.info_download_google {
+    padding-right: 23px;
+}
+
+@media screen and (max-width: 1140px) {
+    .info_download_picture {
+        width: 160px;
+    }
+
+    .info_download_title {
+        font-size: 16px;
+    }
+
+    .info_download_text {
+        font-size: 14px;
+    }
+
+    .info_download_buttons img {
+        width: 117px;
+    }
+}
+
+/* info_online */
+
+.info_online {
+    position: relative;
+    background: url("../images/transition_down.svg") no-repeat 0 -1px / 100%, radial-gradient(95.07% 134.5% at 50% -42.05%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%);
+}
+
+
+.info_online_container {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0px 239px 0 165px; */
+    max-width: 1036px;
+    margin: auto;
+}
+
+.info_online_desc {
+    padding-top: 196px;
+    color: #fff;
+}
+
+.info_online_title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.info_online_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    padding-top: 20px;
+}
+
+.info_online_picture {
+    margin-top: -14px;
+}
+
+.info_online_numbers {
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+
+.info_online_numbers div {
+    padding-right: 49px;
+}
+
+.info_online_numbers_bold {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 43px;
+}
+
+.purple_ball_6 {
+    position: absolute;
+    top: 0px;
+    left: 10%;
+}
+
+.purple_ball_7 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+.purple_ball_8 {
+    position: absolute;
+    bottom: -30px;
+    left: 83%;
+    z-index: 2;
+}
+
+.bg_transition {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.info_platform {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.info_platform_container {
+    /* padding: 68px 167px 0 165px; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1108px;
+    margin: auto;
+}
+
+.info_platform_desc {
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+.info_platform_title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.info_platform_title div {
+    display: flex;
+}
+
+.info_platform_title_icon {
+    width: 30px;
+    height: 30px;
+    margin: 6px 0 0 13px
+}
+
+.info_platform_text {
+    padding-top: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #4E5C66;
+}
+
+@media screen and (max-width: 1190px) {
+    .info_platform_container {
+        flex-direction: column;
+    }
+}
+
+/* info_delivery */
+
+.info_delivery {
+    position: relative;
+}
+
+.info_delivery::before {
+    content: '';
+    position: absolute;
+    background: #FFAB00;
+    height: 582px;
+    width: 100%;
+    z-index: -1;
+}
+
+.info_delivery_container {
+    padding: 0 182px 0px 165px;
+    display: flex;
+    color: #fff;
+}
+
+.info_delivery_desc {
+    padding: 167px 0 0 30px;
+}
+
+.info_delivery_title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.info_delivery_icon {
+    width: 30px;
+    height: 30px;
+    margin: 1px 0 0 17px
+}
+
+.info_delivery_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    padding-top: 30px;
+}
+
+.pink_ball_6 {
+    position: absolute;
+    top: 0;
+    left: 73%;
+    z-index: 1;
+}
+
+.pink_ball_7 {
+    position: absolute;
+    bottom: 30px;
+    left: 76%;
+    z-index: 1;
+}
+
+.red_ball_3 {
+    position: absolute;
+    bottom: 170px;
+    left: 58%;
+    z-index: 1;
+}
+
+.info_delivery_picture-mobile {
+    display: none;
+}
+
+.delivery_bg_transition {
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.delivery_bg_transition_down {
+    position: absolute;
+    bottom: 125px;
+    width: 100%;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1190px) {
+    .info_delivery::before {
+        background: linear-gradient(180deg, rgba(255, 187, 48, 0) 82.72%, rgba(255, 190, 58, 0.88) 94.69%, #FFBF3D 98.56%), #FFAB00;
+        height: 400px;
+    }
+
+    .info_delivery_container {
+        padding: 0;
+        max-width: 540px;
+    }
+
+    .info_delivery_icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .info_delivery_picture-mobile {
+        display: block;
+    }
+
+    .info_delivery_title {
+        font-size: 16px;
+    }
+
+    .info_delivery_picture {
+        display: none;
+    }
+
+    .info_delivery_desc {
+        padding-top: 62px;
+    }
+
+    .pink_ball_6 {
+        display: none;
+    }
+    
+    .pink_ball_7 {
+        display: none;
+    }
+    
+    .red_ball_3 {
+        display: none;
+    }
+}
+
+/* info_questions */
+
+.info_questions_container {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 165px 0 166px; */
+    margin: auto;
+    max-width: 1109px;
+}
+
+.info_questions_desc {
+    padding-top: 187px;
+    width: 100%;
+    max-width: 539px;
+}
+
+.info_questions_title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.info_questions_btn-accordion {
+    color: #4E5C66;;
+}
+
+.info_questions_question {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 9px 20px 9px 10px;
+    box-shadow: 4px 4px 30px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.info_questions_question::after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 56%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-top: 5px solid #f7620f;
+    transition: transform .5s;
+}
+
+.active .info_questions_question::after {
+    transform: translateY(-100%) rotate(180deg);
+}
+
+.info_questions_title span {
+    display: flex;
+}
+
+.info_questions_title_icon {
+    width: 30px;
+    height: 30px;
+    margin: 1px 0 0 14px
+}
+
+.active .info_questions_content {
+    height: auto;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.info_questions_content {
+    height: 0;
+}
+
+.active .info_questions_answer {
+    font-size: 14px;
+}
+
+.info_questions_answer {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 1190px) {
+    .info_questions_container {
+        max-width: 540px;
+        margin: auto;
+        
+    }
+
+    .info_questions_title {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .info_questions_desc {
+        padding-top: 160px;
+    }
+
+    .info_questions_title_icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .info_questions_title span {
+        margin-right: 3px;
+    }
+
+    .info_questions_picture {
+        display: none;
+    }
+
+    br  {
+        display: inline;
+        content: ' ';
+    }
+}
+
+.info_reviews {
+    position: relative;
+}
+
+.info_reviews::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 546px;
+    z-index: -1;
+    background: url('../images/back.png') no-repeat 0% 75% / 100%, radial-gradient(95.07% 139.28% at 50% -43.54%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%) no-repeat;
+    transform: rotate(-180deg);
+    margin-top: 50px;
+}
+
+.info_reviews_container {
+    display: grid;
+    /* justify-content: space-between; */
+    /* padding: 0 165px 0 166px; */
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 66px;
+    max-width: 989px;
+    margin: auto;
+    margin-left: 192px;
+}
+
+.info_reviews_picture {
+    padding: 15px 0;
+}
+
+.pink_ball_8 {
+    position: absolute;
+    top: 35px;
+    left: 38%;
+}
+
+.purple_ball_9 {
+    position: absolute;
+    top: 48px;
+    left: 81%;
+}
+
+.red_ball_4 {
+    position: absolute;
+    top: 500px;
+    left: 79%;
+}
+
+.info_reviews_desc {
+    color: #FFF;
+    padding: 141px 0 0 0;
+}
+
+.info_reviews_title {
+    display: flex;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 98.9%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.info_reviews_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 20px;
+}
+
+.info_reviews_dots {
+    display: flex;
+    margin-top: 20px;
+}
+
+.info_reviews_dot {
+    width: 16.94px;
+    height: 17px;
+    background: #FFFFFF;
+    border-radius: 99px;
+    margin-right: 6px;
+}
+
+.active.info_reviews_dot {
+    width: 81.57px;
+}
+
+.info_reviews_review {
+    margin-top: 20px;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.info_reviews_icon {
+    margin: 0px 12px;
+}
+
+.info_reviews_author {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.reviews_bg_transition {
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.reviews_bg_transition_down {
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+.reviews_leaves {
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (max-width: 1190px) {
+    .info_reviews_picture {
+        display: none;
+    }
+
+    .info_reviews::before {
+        height: 410px;
+        background: url('../images/back.png') no-repeat 0% 75% / 100%, radial-gradient(95.07% 139.28% at 50% -43.54%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%) no-repeat;
+        margin-top: 0;
+    }
+
+    .reviews_leaves {
+        display: none;
+    }
+
+    .info_reviews_desc {
+        padding-top: 62px;
+    }
+
+    .info_reviews_title {
+        font-size: 16px;
+    }
+
+    .info_reviews_container {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 542px;
+    }
+
+    .info_reviews_review {
+        font-size: 14px;
+    }
+
+    .reviews_bg_transition {
+        top: -1px;
+    }
+
+    .reviews_bg_transition_down {
+        bottom: -64px;
+    }
+
+    .pink_ball_8 {
+        display: none;
+    }
+    
+    .purple_ball_9 {
+        display: none;
+    }
+    
+    .red_ball_4 {
+        display: none;
+    }
+}
+
+
+.form {
+    position: relative;
+}
+
+/* .review_mask {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: #FFF;
+    clip-path: circle(255% at 50% 841%);
+} */
+
+.form::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -19%;
+    z-index: -1;
+    background: #FFF;
+    clip-path: circle(255% at 50% 841%);
+}
+
+.form::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    z-index: -1;
+    background: #FFF;
+    /* clip-path: circle(255% at 50% 841%); */
+}
+
+.form_container {
+    margin: 171px 165px 122px 165px;
+    padding: 30px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #FFF;
+}
+
+.form_title {
+    display: flex;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 98.9%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #414141;
+}
+
+.form_text {
+    margin: 10px 0 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #414141;
+}
+
+.form_icon {
+    margin: 0 0 0 12px;
+}
+
+.form_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form_inner {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form_input {
+    border: none;
+    background: #eeeff2;
+    border-radius: 8px;
+    padding: 11px 0 11px 11px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 255px;
+    width: 100%;
+}
+
+.form_button {
+    background: #F7620F;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 25px 50px 24px 50px;
+    max-width: 195px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.form_condition {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #565656;
+}
+
+.form_condition-mobile {
+    display: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #565656;
+}
+
+@media screen and (max-width: 1190px) {
+    .form_container {
+        margin-top: 20px;
+        margin-bottom: 51px;
+    }
+
+    .form_title {
+        font-size: 16px;
+    }
+
+    .form_icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media screen and (max-width: 1429px) {
+    .form_inner {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .form_input {
+        width: 100%;
+        max-width: none;
+    }
+
+    .form_form {
+        flex-direction: column;
+    }
+
+    .form_condition {
+        display: none;
+    }
+
+    .form_condition-mobile {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .form_button {
+        width: 100%;
+        max-width: none;
+        padding: 12px 0px 10px 0px;
+    }
+}
+
+.footer {
+    background: #FFAB00;
+}
+
+.footer_bar {
+    display: flex;
+    color: #FFFFFF;
+    max-width: 1110px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_contact_container {
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.footer_sign_in {
+    background: #FFFFFF;
+    border-radius: 100px;
+    padding: 8px 25px;
+    margin: 10px 0px;
+}
+
+.footer_sign_in-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 170%;
+    color: #FFAB00;
+}
